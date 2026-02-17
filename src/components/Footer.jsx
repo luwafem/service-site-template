@@ -53,9 +53,6 @@ export default function Footer() {
               <span className="hidden md:inline">—</span>
               <span>All Rights Reserved</span>
             </div>
-            <div className="text-[8px] uppercase tracking-[0.6em] text-neutral-300">
-              Site by <span className="text-neutral-400">Gemini Editorial</span>
-            </div>
           </div>
 
           {/* Large Stylized Logo Mark (Watermark style) */}

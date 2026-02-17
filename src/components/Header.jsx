@@ -27,7 +27,6 @@ export default function Header() {
     document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
   }, [isMenuOpen]);
 
-  // Dynamic color logic: White text on Hero, Black text on Scroll
   const textColor = isScrolled || isMenuOpen ? 'text-black' : 'text-white';
   const borderColor = isScrolled ? 'border-black/10' : 'border-white/20';
 
@@ -36,14 +35,14 @@ export default function Header() {
       <header 
         className={`fixed top-0 left-0 w-full transition-all duration-700 ease-in-out z-[100] ${
           isScrolled 
-            ? 'bg-white py-4 shadow-sm' 
-            : 'bg-gradient-to-b from-black/40 to-transparent py-8'
+            ? 'bg-[#faf9f6] py-3 md:py-4 shadow-sm' 
+            : 'bg-gradient-to-b from-black/50 to-transparent py-6 md:py-10'
         }`}
       >
-        <div className="max-w-[1800px] mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="max-w-[1800px] mx-auto px-5 md:px-12 flex items-center justify-between">
           
-          {/* LEFT NAV */}
-          <nav className="hidden md:flex items-center gap-10 flex-1">
+          {/* LEFT NAV - Hidden on mobile, flex-1 on desktop */}
+          <nav className="hidden md:flex items-center gap-10 md:flex-1">
             {leftNav.map((item) => (
               <a 
                 key={item.label} 
@@ -56,19 +55,19 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CENTER BRAND */}
-          <div className="flex-none z-[120]">
+          {/* CENTER BRAND - Centered on all screens */}
+          <div className="flex-none z-[120] text-center">
             <a href="#" className="flex flex-col items-center">
               <span 
-                className={`text-xl md:text-3xl font-light uppercase tracking-[0.6em] transition-all duration-700 ${design.font.heading} ${textColor}`}
+                className={`text-lg sm:text-xl md:text-3xl font-light uppercase tracking-[0.4em] md:tracking-[0.6em] transition-all duration-700 ${design.font.heading} ${textColor}`}
               >
                 {businessName}
               </span>
             </a>
           </div>
 
-          {/* RIGHT NAV */}
-          <div className="flex items-center justify-end gap-10 flex-1">
+          {/* RIGHT NAV & MOBILE TOGGLE */}
+          <div className="flex items-center justify-end md:flex-1 gap-4 md:gap-10">
             <nav className="hidden md:flex items-center gap-10">
               {rightNav.map((item) => (
                 <a 
@@ -88,42 +87,51 @@ export default function Header() {
               </a>
             </nav>
 
-            {/* MOBILE TOGGLE: Forced Contrast */}
+            {/* MOBILE TOGGLE - Adjusted padding for better touch target */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden relative z-[130] p-2 focus:outline-none"
+              className="md:hidden relative z-[130] p-3 -mr-2 focus:outline-none"
+              aria-label="Menu"
             >
               <div className="flex flex-col gap-1.5 items-end w-6">
-                <span className={`h-[1.5px] w-6 transition-all duration-500 ${isMenuOpen || isScrolled ? 'bg-black' : 'bg-white'} ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-                <span className={`h-[1.5px] w-4 transition-all duration-500 ${isMenuOpen || isScrolled ? 'bg-black' : 'bg-white'} ${isMenuOpen ? 'opacity-0' : ''}`} />
-                <span className={`h-[1.5px] w-5 transition-all duration-500 ${isMenuOpen || isScrolled ? 'bg-black' : 'bg-white'} ${isMenuOpen ? '-rotate-45 -translate-y-2 w-6' : ''}`} />
+                <span className={`h-[1px] w-6 transition-all duration-500 ${isMenuOpen || isScrolled ? 'bg-black' : 'bg-white'} ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+                <span className={`h-[1px] w-4 transition-all duration-500 ${isMenuOpen || isScrolled ? 'bg-black' : 'bg-white'} ${isMenuOpen ? 'opacity-0' : ''}`} />
+                <span className={`h-[1px] w-5 transition-all duration-500 ${isMenuOpen || isScrolled ? 'bg-black' : 'bg-white'} ${isMenuOpen ? '-rotate-45 -translate-y-2 w-6' : ''}`} />
               </div>
             </button>
           </div>
         </div>
       </header>
 
-      {/* MOBILE OVERLAY */}
+      {/* MOBILE OVERLAY - Cleaned up spacing */}
       <div 
-        className={`fixed inset-0 z-[90] transition-all duration-700 ease-in-out ${
-          isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+        className={`fixed inset-0 z-[90] transition-all duration-700 cubic-bezier(0.85, 0, 0.15, 1) ${
+          isMenuOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <div className="absolute inset-0 bg-[#faf9f6] flex flex-col items-center justify-center">
-          <nav className="flex flex-col items-center gap-8">
+        <div className="absolute inset-0 bg-[#faf9f6] flex flex-col items-center justify-center p-6">
+          <nav className="flex flex-col items-center gap-6 sm:gap-8 w-full">
             {menuItems.map((item, idx) => (
               <a
                 key={item.label}
                 href={item.href}
-                className={`text-5xl font-light tracking-tighter text-black ${design.font.heading} hover:italic transition-all`}
+                className={`text-4xl sm:text-5xl font-light tracking-tighter text-black ${design.font.heading} hover:italic transition-all duration-300`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
               </a>
             ))}
+            <a 
+              href="#booking"
+              onClick={() => setIsMenuOpen(false)}
+              className="mt-4 text-[12px] uppercase tracking-[0.4em] font-bold border border-black px-10 py-4 text-black"
+            >
+              Book Appointment
+            </a>
           </nav>
         </div>
       </div>
     </>
   );
 }
+
