@@ -1,7 +1,7 @@
 export const clientConfig = {
   businessName: "Grace's Maison",
   tagline: "High-Art Hair. Effortless Beauty.",
-  heroImage: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1600", // Editorial hair styling shot
+  heroImage: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1600", // Editorial hairstyling shot
   colors: {
     primary: "#171717", // Rich Obsidian
     secondary: "#FAF9F6", // Off-white/Cream
