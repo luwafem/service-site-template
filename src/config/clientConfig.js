@@ -1,12 +1,12 @@
 export const clientConfig = {
-  businessName: "Grace's Maison",
-  tagline: "High-Art Hair. Effortless Beauty.",
-  heroImage: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1600", // Editorial hairstyling shot
+  businessName: "Grace's Atelier",
+  tagline: "Curating Spaces. Defining Narratives.",
+  heroImage: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600", // High-end minimalist living room
   colors: {
-    primary: "#171717", // Rich Obsidian
-    secondary: "#FAF9F6", // Off-white/Cream
-    accent: "#B89B72", // Muted Bronze/Clay
-    text: "#1A1A1A",
+    primary: "#1C1C1C", // Deep Carbon
+    secondary: "#F4F1EE", // Warm Stone / Linen
+    accent: "#8C7E6D", // Muted Taupe
+    text: "#121212",
   },
   design: {
     template: "bold", 
@@ -25,40 +25,41 @@ export const clientConfig = {
   },
   services: [
     {
-      name: "Couture Cut & Finish",
-      price: "₦45,000",
-      description: "A precision tailored cut following the natural fall of your hair, finished with our signature maison blowout.",
-      image: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800",
-      calendlyUrl: "https://calendly.com/gracesmaison/cut",
+      name: "Full-Service Interior Design",
+      price: "From ₦1,500,000",
+      description: "A comprehensive journey from spatial planning and technical drawings to final furniture installation and styling.",
+      image: "https://images.unsplash.com/photo-1616486341353-c583342605a1?w=800",
+      calendlyUrl: "https://calendly.com/gracesatelier/consultation",
     },
     {
-      name: "Lived-in Balayage",
-      price: "₦85,000",
-      description: "Artisanal hand-painted highlights designed to grow out seamlessly and complement your skin's natural undertones.",
-      image: "https://images.unsplash.com/photo-1620331311520-246422fd82f9?w=800",
-      calendlyUrl: "https://calendly.com/gracesmaison/color",
+      name: "Bespoke Curation & Styling",
+      price: "₦450,000",
+      description: "Elevating existing spaces through a curated selection of artisanal furniture, fine art, and custom textiles.",
+      image: "https://images.unsplash.com/photo-1616137466211-f939a420be84?w=800",
+      calendlyUrl: "https://calendly.com/gracesatelier/styling",
     },
     {
-      name: "The Sculpted Glow Facial",
-      price: "₦55,000",
-      description: "A restorative treatment focusing on lymphatic drainage and deep hydration for an immediate editorial lift.",
-      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800",
-      calendlyUrl: "https://calendly.com/gracesmaison/facial",
+      name: "Conceptual Vision Session",
+      price: "₦150,000",
+      description: "A two-hour intensive deep-dive to define your aesthetic direction, color palette, and materiality mood boards.",
+      image: "https://images.unsplash.com/photo-1615876234582-29a30c5da17b?w=800",
+      calendlyUrl: "https://calendly.com/gracesatelier/vision",
     },
   ],
   portfolio: [
-    "https://images.unsplash.com/photo-1595475241949-0f02b288d6d4?w=800", // Salon interior detail
-    "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800", // Beauty close-up
+    "https://unsplash.com/photos/IH7wPsjwomc/download?force=true&w=2400", // Minimalist kitchen detail
+    "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800", // Soft lit bedroom, // Minimalist kitchen detail
+    "https://unsplash.com/photos/z6z2W6Qrpho/download?force=true&w=2400",
   ],
   testimonials: [
-    { text: "The first time a stylist actually understood the architecture of my curls. Absolute perfection.", author: "Tari E." },
-    { text: "A sanctuary. I come for the hair, but I stay for the peace and the flawless service.", author: "Oluwaseun A." },
+    { text: "Grace has an uncanny ability to translate abstract feelings into physical form. Our home is now a masterpiece.", author: "Mr. & Mrs. Okoro" },
+    { text: "Sophisticated, disciplined, and visionary. The finest design eye in Lagos.", author: "Fola P." },
   ],
   contact: {
     phone: "+2348012345678",
     whatsapp: "+2348012345678",
-    instagram: "gracesmaison",
-    email: "maison@gracesmaison.com",
-    address: "Ikoyi, Lagos",
+    instagram: "gracesatelier",
+    email: "studio@gracesatelier.com",
+    address: "Banana Island, Lagos",
   },
 };
