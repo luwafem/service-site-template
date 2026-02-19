@@ -63,7 +63,7 @@ export default function HeroBeautyEditorial() {
         <div className="flex gap-12 md:gap-24">
           <div className="flex flex-col gap-1">
              <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-400">Location</span>
-             <span className="text-[11px] text-neutral-800 tracking-widest font-medium uppercase">Beverly Hills — CA</span>
+             <span className="text-[11px] text-neutral-800 tracking-widest font-medium uppercase">lagos</span>
           </div>
           <div className="hidden sm:flex flex-col gap-1">
              <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-400">Available</span>

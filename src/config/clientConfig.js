@@ -1,21 +1,21 @@
 export const clientConfig = {
-  businessName: "Grace's Atelier",
-  tagline: "Curating Spaces. Defining Narratives.",
-  heroImage: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600", // High-end minimalist living room
+  businessName: "Grace POP Interiors",
+  tagline: "Transforming Spaces with Precision POP Designs.",
+  heroImage: "https://i.pinimg.com/1200x/61/04/c2/6104c21d9b9a207e814ffe9321b6189c.jpg", // Modern living room with POP ceiling
   colors: {
-    primary: "#1C1C1C", // Deep Carbon
-    secondary: "#F4F1EE", // Warm Stone / Linen
-    accent: "#8C7E6D", // Muted Taupe
-    text: "#121212",
+    primary: "#1A1A1A", // Charcoal Black
+    secondary: "#F7F7F7", // Clean White
+    accent: "#C9A24D", // Gold accent (luxury POP finish)
+    text: "#111111",
   },
   design: {
-    template: "bold", 
-    heroStyle: "asymmetric",
-    serviceCardStyle: "magazine-grid",
-    buttonStyle: "sharp", 
+    template: "bold",
+    heroStyle: "centered",
+    serviceCardStyle: "image-focus",
+    buttonStyle: "solid",
     font: {
-      heading: "Cormorant Garamond", 
-      body: "Montserrat",
+      heading: "Playfair Display",
+      body: "Poppins",
     },
     sections: {
       showTestimonials: true,
@@ -25,41 +25,52 @@ export const clientConfig = {
   },
   services: [
     {
-      name: "Full-Service Interior Design",
-      price: "From ₦1,500,000",
-      description: "A comprehensive journey from spatial planning and technical drawings to final furniture installation and styling.",
-      image: "https://images.unsplash.com/photo-1616486341353-c583342605a1?w=800",
-      calendlyUrl: "https://calendly.com/gracesatelier/consultation",
+      name: "POP Ceiling Installation",
+      price: "From ₦300,000",
+      description:
+        "Professional POP ceiling installations including simple, tray, layered, and modern ceiling designs for homes and offices.",
+      image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800",
+      calendlyUrl: "https://calendly.com/gracepopinteriors/inspection",
     },
     {
-      name: "Bespoke Curation & Styling",
-      price: "₦450,000",
-      description: "Elevating existing spaces through a curated selection of artisanal furniture, fine art, and custom textiles.",
-      image: "https://images.unsplash.com/photo-1616137466211-f939a420be84?w=800",
-      calendlyUrl: "https://calendly.com/gracesatelier/styling",
+      name: "Luxury POP Ceiling Designs",
+      price: "From ₦650,000",
+      description:
+        "High-end custom POP ceilings with lighting channels, recessed details, and premium finishing for luxury interiors.",
+      image: "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=800",
+      calendlyUrl: "https://calendly.com/gracepopinteriors/luxury",
     },
     {
-      name: "Conceptual Vision Session",
-      price: "₦150,000",
-      description: "A two-hour intensive deep-dive to define your aesthetic direction, color palette, and materiality mood boards.",
-      image: "https://images.unsplash.com/photo-1615876234582-29a30c5da17b?w=800",
-      calendlyUrl: "https://calendly.com/gracesatelier/vision",
+      name: "POP Wall & TV Console Designs",
+      price: "From ₦250,000",
+      description:
+        "Stylish POP wall features, TV consoles, and decorative partitions designed to elevate your living or commercial space.",
+      image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800",
+      calendlyUrl: "https://calendly.com/gracepopinteriors/walls",
     },
   ],
   portfolio: [
-    "https://unsplash.com/photos/IH7wPsjwomc/download?force=true&w=2400", // Minimalist kitchen detail
-    "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800", // Soft lit bedroom, // Minimalist kitchen detail
-    "https://unsplash.com/photos/z6z2W6Qrpho/download?force=true&w=2400",
+    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=2400", // POP ceiling living room
+    "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=2400", // Bedroom POP ceiling
+    "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=2400", // TV wall POP design
   ],
   testimonials: [
-    { text: "Grace has an uncanny ability to translate abstract feelings into physical form. Our home is now a masterpiece.", author: "Mr. & Mrs. Okoro" },
-    { text: "Sophisticated, disciplined, and visionary. The finest design eye in Lagos.", author: "Fola P." },
+    {
+      text:
+        "The POP ceiling completely changed the feel of our home. Clean work, sharp finishing, and very professional.",
+      author: "Mr. Adewale",
+    },
+    {
+      text:
+        "Their ceiling and TV wall designs gave our apartment a luxury look without going over budget.",
+      author: "Chioma O.",
+    },
   ],
   contact: {
     phone: "+2348012345678",
     whatsapp: "+2348012345678",
-    instagram: "gracesatelier",
-    email: "studio@gracesatelier.com",
-    address: "Banana Island, Lagos",
+    instagram: "gracepopinteriors",
+    email: "info@gracepopinteriors.com",
+    address: "Lekki, Lagos",
   },
 };
