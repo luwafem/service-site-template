@@ -56,12 +56,12 @@ export const clientConfig = {
   testimonials: [
     {
       text:
-        "The best late-night massage I've ever had. They arrived at my hotel in Westlands within 45 minutes. Truly professional.",
+        "The best late night massage I've ever had. They arrived at my hotel in Westlands within 45 minutes. Truly professional.",
       author: "Sarah J.",
     },
     {
       text:
-        "We booked them for a bridal shower in Karen. The team was punctual, and the setup was like a 5-star resort in our living room.",
+        "We booked them for a bridal shower in Karen. The team was punctual, and the setup was like a 5 star resort in our living room.",
       author: "Kamau W.",
     },
   ],
