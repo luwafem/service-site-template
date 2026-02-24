@@ -85,7 +85,7 @@ export default function Contact() {
             <div className="mt-24 flex justify-between items-center">
                <div className="flex flex-col gap-2">
                  <span className="text-[10px] uppercase tracking-[0.5em] text-neutral-400">Location</span>
-                 <span className="text-sm font-light tracking-widest uppercase text-neutral-900 ">Lagos</span>
+                 <span className="text-sm font-light tracking-widest uppercase text-neutral-900 ">Nariobi</span>
                </div>
                <a 
                 href="#booking" 
