@@ -48,7 +48,7 @@ export default function ServicesList() {
               <div className="flex flex-col flex-1">
                 <div className="flex items-center gap-4 mb-6">
                   <span className="text-[10px] font-bold text-neutral-900">0{idx + 1}</span>
-                  <div className="w-12 h-[1px] bg-neutral-900" />
+                  
                 </div>
                 
                 <h3 className={`text-4xl md:text-5xl font-light uppercase tracking-tighter text-neutral-900 mb-6 ${design.font.heading}`}>

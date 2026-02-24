@@ -26,7 +26,6 @@ export default function TestimonialsEditorial() {
           <div className="lg:col-span-4 lg:sticky lg:top-40 h-fit">
             <div className="space-y-12">
               <div className="space-y-4">
-                <div className="w-12 h-[1px] bg-black" />
                 <p className={`text-sm md:text-base text-neutral-500 font-light leading-relaxed max-w-xs ${design.font.body}`}>
                   A curated collection of artifacts and reflections from those who have stepped into our sanctuary.
                 </p>

@@ -49,9 +49,9 @@ export const clientConfig = {
     },
   ],
   portfolio: [
-    "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=2400", // Spa products
-    "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=2400", // Facial treatment
-    "https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?w=2400", // Stones and massage
+    "https://unsplash.com/photos/-AakIaAPV0w/download?force=true&w=2400", // Spa products
+    "https://unsplash.com/photos/qybZ2w0CzMw/download?force=true&w=2400", // Facial treatment
+    "https://unsplash.com/photos/BJ7i-96glwM/download?force=true&w=2400", // Stones and massage
   ],
   testimonials: [
     {

@@ -22,7 +22,6 @@ export default function Contact() {
           <div className="lg:col-span-4 lg:sticky lg:top-40 h-fit space-y-16">
             <div className="space-y-6 max-w-sm">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-[1px] bg-black" />
                 <span className="text-[9px] uppercase tracking-[0.4em] font-bold">Strictly Private</span>
               </div>
               <p className={`text-lg md:text-xl text-neutral-500 font-light leading-relaxed italic ${design.font.body}`}>
