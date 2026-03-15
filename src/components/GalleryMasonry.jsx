@@ -10,17 +10,15 @@ export default function GallerySwipe() {
       {/* 1. The Editorial Masthead for the Section */}
       <div className="px-6 md:px-12 max-w-[1800px] mx-auto mb-20 flex flex-col md:flex-row md:items-end justify-between">
         <div className="overflow-hidden">
-          <span className="text-[10px] uppercase tracking-[0.5em] text-neutral-400 block mb-4 translate-y-0">
-            The Environment
-          </span>
-          <h2 className={`text-6xl md:text-8xl lg:text-9xl font-light tracking-tighter text-neutral-900 leading-none ${design.font.heading}`}>
-            The <span className="italic font-serif text-neutral-400">Studio</span>
-          </h2>
+          
+          <h3 className={`text-6xl md:text-8xl lg:text-9xl font-light tracking-tighter text-neutral-900 leading-none ${design.font.heading}`}>
+            Gallery 
+          </h3>
         </div>
         <div className="max-w-xs mt-8 md:mt-0 md:text-right">
           <p className={`text-sm text-neutral-500 leading-relaxed uppercase tracking-widest ${design.font.body}`}>
-            A sanctuary built for comfort, designed for the modern aesthete. 
-            <span className="block mt-2 text-[10px] text-neutral-300">— {businessName} Interior</span>
+            
+            <span className="block mt-2 text-[10px] text-neutral-300">{businessName} </span>
           </p>
         </div>
       </div>

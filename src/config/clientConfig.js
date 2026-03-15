@@ -1,12 +1,12 @@
 export const clientConfig = {
-  businessName: "Haven Spa",
-  tagline: "Premium Wellness & Relaxation, Delivered to Your Door 24/7.",
-  heroImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200", // Serene spa setup
+  businessName: "Shey Beauty Lab",
+  tagline: "Lash Artistry & Beauty Lab. Define Your Gaze.",
+  heroImage: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1200",
   colors: {
-    primary: "#2C5F5D", // Deep Teal (Calming & Professional)
-    secondary: "#FDFBF7", // Soft Off-White
-    accent: "#D4AF37", // Soft Gold (Luxury touch)
-    text: "#222222",
+    primary: "#B76E79", // Rose Gold
+    secondary: "#F9F1F0", // Soft Blush
+    accent: "#D4AF37", // Warm Gold
+    text: "#2C2C2C",
   },
   design: {
     template: "bold",
@@ -22,54 +22,56 @@ export const clientConfig = {
       showGallery: true,
       showContactForm: true,
     },
-  },services: [
+  },
+  services: [
     {
-      name: "Signature Deep Tissue Massage",
-      price: "From KSh 4,500",
+      name: "Classic Lash Extensions",
+      price: "Starting at ₦25,000",
       description:
-        "Available 24/7 at your home or hotel. Our therapists bring professional tables, premium oils, and soothing music to melt away your stress.",
-      image: "https://unsplash.com/photos/9BjH8jl7Uj0/download?force=true&w=2400",
-      calendlyUrl: "https://calendly.com/nairobigenspa/booking",
+        "Enhance your natural lashes with a timeless, elegant look. One extension per natural lash for a subtle, lengthened effect.",
+      image: "https://images.unsplash.com/photo-1583001933989-c6d5c9a8b1c4?w=800",
+      calendlyUrl: "https://calendly.com/sheybeautylab/classic",
     },
     {
-      name: "Luxury Couples Retreat",
-      price: "From KSh 8,500",
+      name: "Volume & Hybrid Lashes",
+      price: "Starting at ₦35,000",
       description:
-        "A side-by-side relaxation experience for you and your partner. Perfect for anniversaries or a quiet night in at any Nairobi location.",
-      image: "https://unsplash.com/photos/_TyrA1RUaiI/download?force=true",
-      calendlyUrl: "https://calendly.com/nairobigenspa/couples",
+        "Achieve a fuller, dramatic look with multiple lightweight extensions per natural lash. Customizable for any desired density.",
+      image: "https://images.unsplash.com/photo-1583197967984-6e5e7c1b1f8a?w=800",
+      calendlyUrl: "https://calendly.com/sheybeautylab/volume",
     },
     {
-      name: "Corporate & Event Wellness",
-      price: "Custom Pricing",
+      name: "Lash Lift & Tint",
+      price: "Starting at ₦15,000",
       description:
-        "Boost morale at your next Nairobi event or office with chair massages and express facials. Tailored for groups and corporate functions.",
-      image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800",
-      calendlyUrl: "https://calendly.com/nairobigenspa/events",
+        "Lift and curl your natural lashes for a wide eyed look, plus a deep tint to define and darken perfect for low maintenance beauty.",
+      image: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800",
+      calendlyUrl: "https://calendly.com/sheybeautylab/lift-tint",
     },
   ],
   portfolio: [
-    "https://unsplash.com/photos/-AakIaAPV0w/download?force=true&w=2400", // Spa products
-    "https://unsplash.com/photos/qybZ2w0CzMw/download?force=true&w=2400", // Facial treatment
-    "https://unsplash.com/photos/BJ7i-96glwM/download?force=true&w=2400", // Stones and massage
+    "https://images.unsplash.com/photo-1583197967984-6e5e7c1b1f8a?w=2400",
+    "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=2400",
+    "https://images.unsplash.com/photo-1583001933989-c6d5c9a8b1c4?w=2400",
   ],
   testimonials: [
     {
       text:
-        "The best late night massage I've ever had. They arrived at my hotel in Westlands within 45 minutes. Truly professional.",
-      author: "Sarah J.",
+        "Shey Beauty Lab gave me the most natural looking volume lashes. They last for weeks and always get compliments. Absolutely recommend!",
+      author: "Chioma A.",
     },
     {
       text:
-        "We booked them for a bridal shower in Karen. The team was punctual, and the setup was like a 5 star resort in our living room.",
-      author: "Kamau W.",
+        "The lash lift and tint changed my mornings I wake up looking awake! Professional, clean, and so friendly. My go to lash spot.",
+      author: "Temilade F.",
     },
   ],
   contact: {
-    phone: "+254 700 000 000",
-    whatsapp: "+254 700 000 000",
-    instagram: "nairobigenspa",
-    email: "relax@nairobigenspa.co.ke",
-    address: "Available Across Nairobi & Environs",
+    phone: "+234 800 123 4567",
+    whatsapp: "+234 800 123 4567",
+    instagram: "sheybeautylab",
+    tiktok: "sheybeautylab",  // Added TikTok field
+    email: "hello@sheybeautylab.com",
+    address: "Ondo & Lagos",
   },
 };

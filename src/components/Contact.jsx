@@ -11,8 +11,7 @@ export default function Contact() {
         <div className="flex flex-col mb-32 border-b border-neutral-200 pb-12">
           
           <h2 className={`text-7xl md:text-[10rem] lg:text-[13rem] font-light tracking-tighter leading-[0.8] text-neutral-900 ${design.font.heading}`}>
-            The <br />
-            <span className="italic font-serif text-neutral-300 ml-[0.1em]">Connect</span>
+            Contact Us
           </h2>
         </div>
 
@@ -47,8 +46,8 @@ export default function Contact() {
           {/* Right Side: The Interactive Directory */}
           <div className="lg:col-span-8 flex flex-col">
             {[
-              { id: '01', label: 'WhatsApp', sub: 'Instant Sync', href: contact.whatsapp ? `https://wa.me/${contact.whatsapp.replace('+', '')}` : null },
-              { id: '02', label: 'Direct Call', sub: 'Voice Exchange', href: contact.phone ? `tel:${contact.phone}` : null },
+              { id: '01', label: 'WhatsApp', sub: 'Instant Sync', href: contact.whatsapp ? `https://wa.me/${contact.whatsapp.replace(/\D/g, '')}` : null },
+              { id: '02', label: 'TikTok', sub: 'Visual Stories', href: contact.tiktok ? `https://tiktok.com/@${contact.tiktok}` : null },
               { id: '03', label: 'Instagram', sub: 'Visual Feed', href: contact.instagram ? `https://instagram.com/${contact.instagram}` : null }
             ].map((item, idx) => (
               item.href && (
@@ -85,7 +84,7 @@ export default function Contact() {
             <div className="mt-24 flex justify-between items-center">
                <div className="flex flex-col gap-2">
                  <span className="text-[10px] uppercase tracking-[0.5em] text-neutral-400">Location</span>
-                 <span className="text-sm font-light tracking-widest uppercase text-neutral-900 ">Nariobi</span>
+                 <span className="text-sm font-light tracking-widest uppercase text-neutral-900 ">Ondo & Lagos</span>
                </div>
                <a 
                 href="#booking" 

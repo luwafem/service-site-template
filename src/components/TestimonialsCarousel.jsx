@@ -1,7 +1,7 @@
 import { clientConfig } from '../config/clientConfig';
 
 export default function TestimonialsEditorial() {
-  const { testimonials, design } = clientConfig;
+  const { testimonials, design, colors } = clientConfig;
 
   if (!testimonials || testimonials.length === 0) return null;
 
@@ -11,13 +11,10 @@ export default function TestimonialsEditorial() {
         
         {/* Editorial Heading Strategy */}
         <div className="flex flex-col mb-32 border-b border-neutral-200 pb-12">
-          <span className="text-[10px] uppercase tracking-[0.6em] text-neutral-400 mb-8 block">
-            The Sentiment
-          </span>
-          <h2 className={`text-7xl md:text-[10rem] lg:text-[13rem] font-light tracking-tighter leading-[0.8] text-neutral-900 ${design.font.heading}`}>
-            Kind <br />
-            <span className="italic font-serif text-neutral-300 ml-[0.1em]">Words</span>
-          </h2>
+          
+          <h3 className={`text-7xl md:text-[10rem] lg:text-[13rem] font-light tracking-tighter leading-[0.8] text-neutral-900 ${design.font.heading}`}>
+            Feedback <br />
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
@@ -27,13 +24,13 @@ export default function TestimonialsEditorial() {
             <div className="space-y-12">
               <div className="space-y-4">
                 <p className={`text-sm md:text-base text-neutral-500 font-light leading-relaxed max-w-xs ${design.font.body}`}>
-                  A curated collection of artifacts and reflections from those who have stepped into our sanctuary.
+                  Real words from real clients who trust us with their lashes.
                 </p>
               </div>
               
               {/* Trust Badge / Stat */}
               <div className="pt-8 border-t border-neutral-200 inline-block">
-                <span className="text-[9px] uppercase tracking-[0.4em] text-neutral-400 block mb-2">Community Rating</span>
+                <span className="text-[9px] uppercase tracking-[0.4em] text-neutral-400 block mb-2">Client Rating</span>
                 <span className={`text-4xl font-light ${design.font.heading}`}>5.0 / 5.0</span>
               </div>
             </div>
@@ -49,19 +46,12 @@ export default function TestimonialsEditorial() {
                 }`}
               >
                 {/* Visual Numbering Mask */}
-                <div className="absolute -top-12 left-0 md:left-auto overflow-hidden h-8 w-24 opacity-20 group-hover:opacity-100 transition-opacity duration-700">
-                   <span className="text-[10px] font-mono tracking-widest text-black block transition-transform duration-700 group-hover:-translate-y-full">
-                     VOL_00{idx + 1}
-                   </span>
-                   <span className="text-[10px] font-mono tracking-widest text-black block absolute top-full transition-transform duration-700 group-hover:-translate-y-full italic">
-                     REF_2026
-                   </span>
-                </div>
+               
 
                 {/* Big Editorial Quote */}
                 <blockquote className={`max-w-2xl ${idx % 2 === 0 ? 'text-left' : 'text-right'}`}>
                   <p className={`text-3xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] text-neutral-800 transition-all duration-700 group-hover:text-black ${design.font.body}`}>
-                    “{t.text}”
+                    {t.text}
                   </p>
                 </blockquote>
 
@@ -71,12 +61,15 @@ export default function TestimonialsEditorial() {
                     {t.author}
                   </cite>
                   <span className="text-[8px] uppercase tracking-[0.5em] text-neutral-400 mt-3">
-                    Sanctuary Guest — Verified
+                    Shey Beauty Lab Client — Verified
                   </span>
                 </div>
 
-                {/* Hover Background Accent (Subtle) */}
-                <div className={`absolute -inset-x-8 -inset-y-12 bg-neutral-100/0 group-hover:bg-neutral-100/50 -z-10 transition-colors duration-700 rounded-sm`} />
+                {/* Hover Background Accent (Rose Gold) */}
+                <div 
+                  className={`absolute -inset-x-8 -inset-y-12 bg-opacity-0 group-hover:bg-opacity-10 -z-10 transition-colors duration-700 rounded-sm`}
+                  style={{ backgroundColor: colors.primary }}
+                />
               </div>
             ))}
           </div>

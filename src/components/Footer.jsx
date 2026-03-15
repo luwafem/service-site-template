@@ -1,7 +1,7 @@
 import { clientConfig } from '../config/clientConfig';
 
 export default function Footer() {
-  const { businessName, design, contact } = clientConfig;
+  const { businessName, design, contact, colors } = clientConfig;
   const year = new Date().getFullYear();
 
   return (
@@ -15,15 +15,20 @@ export default function Footer() {
               {businessName}
             </h2>
             <p className="text-[10px] uppercase tracking-[0.5em] text-neutral-400 max-w-sm leading-relaxed">
-              Designed for the modern aesthete. A sanctuary where architecture meets wellness.
+              Lash Artistry & Beauty Lab. Define Your Gaze.
             </p>
           </div>
 
           <div className="md:col-span-3 space-y-8">
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold block border-b border-neutral-200 pb-2">Navigation</span>
             <nav className="flex flex-col gap-4">
-              {['Services', 'The Studio', 'Journal', 'Contact'].map((item) => (
-                <a key={item} href={`#${item.toLowerCase().replace(' ', '')}`} className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black transition-colors w-fit">
+              {['Services', 'Gallery', 'Stories', 'Book'].map((item) => (
+                <a 
+                  key={item} 
+                  href={`#${item.toLowerCase()}`} 
+                  className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black transition-colors w-fit"
+                  style={{ hover: { color: colors.primary } }}
+                >
                   {item}
                 </a>
               ))}
@@ -34,10 +39,16 @@ export default function Footer() {
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold block border-b border-neutral-200 pb-2">Inquiries</span>
             <div className="flex flex-col gap-4">
               <p className="text-xs uppercase tracking-widest text-neutral-500 italic">
-                {contact.address || "Beverly Hills, CA"}
+                {contact.address}
               </p>
               <p className="text-xs uppercase tracking-widest text-neutral-500">
-                Studio Open Daily 09:00 — 20:00
+                {contact.phone}
+              </p>
+              <p className="text-xs uppercase tracking-widest text-neutral-500">
+                {contact.email}
+              </p>
+              <p className="text-xs uppercase tracking-widest text-neutral-500">
+                By Appointment Only
               </p>
             </div>
           </div>
@@ -55,24 +66,37 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Large Stylized Logo Mark (Watermark style) */}
-          <div className="relative">
-             <span className={`text-[12vw] md:text-[8vw] font-light text-neutral-200/40 leading-none select-none ${design.font.heading}`}>
-               {businessName.charAt(0)}
-             </span>
-          </div>
+          
 
-          {/* Social Links as simple text */}
+          {/* Social Links */}
           <div className="flex gap-12">
-            {['Instagram', 'Pinterest', 'LinkedIn'].map((platform) => (
-              <a 
-                key={platform}
-                href="#" 
-                className="text-[9px] uppercase tracking-[0.4em] font-bold text-neutral-900 border-b border-black/10 hover:border-black transition-all"
-              >
-                {platform}
-              </a>
-            ))}
+            <a 
+              href={`https://instagram.com/${contact.instagram}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[9px] uppercase tracking-[0.4em] font-bold text-neutral-900 border-b border-black/10 hover:border-black transition-all"
+              style={{ hover: { borderColor: colors.primary } }}
+            >
+              Instagram
+            </a>
+            <a 
+              href={`https://tiktok.com/@${contact.tiktok}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[9px] uppercase tracking-[0.4em] font-bold text-neutral-900 border-b border-black/10 hover:border-black transition-all"
+              style={{ hover: { borderColor: colors.primary } }}
+            >
+              TikTok
+            </a>
+            <a 
+              href={`https://wa.me/${contact.whatsapp.replace(/\D/g, '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[9px] uppercase tracking-[0.4em] font-bold text-neutral-900 border-b border-black/10 hover:border-black transition-all"
+              style={{ hover: { borderColor: colors.primary } }}
+            >
+              WhatsApp
+            </a>
           </div>
         </div>
       </div>

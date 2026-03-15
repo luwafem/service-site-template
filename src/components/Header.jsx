@@ -2,15 +2,15 @@ import { useState, useEffect } from 'react';
 import { clientConfig } from '../config/clientConfig';
 
 export default function Header() {
-  const { businessName, design, navItems } = clientConfig;
+  const { businessName, design, colors, contact } = clientConfig;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const menuItems = navItems || [
-    { label: "Treatments", href: "#services" },
-    { label: "Experience", href: "#gallery" },
+  // Define navigation items relevant for a lash tech
+  const menuItems = [
+    { label: "Services", href: "#services" },
+    { label: "Gallery", href: "#gallery" },
     { label: "Stories", href: "#testimonials" },
-    { label: "Connect", href: "#booking" },
   ];
 
   const middleIndex = Math.ceil(menuItems.length / 2);
@@ -27,7 +27,7 @@ export default function Header() {
     document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
   }, [isMenuOpen]);
 
-  // Readability Logic: White text over hero, Black text on white scroll bg
+  // Readability Logic: White text over hero, Dark text on white scroll bg
   const textColor = isScrolled || isMenuOpen ? 'text-neutral-900' : 'text-white';
   const borderColor = isScrolled ? 'border-neutral-900/10' : 'border-white/30';
 
@@ -65,8 +65,8 @@ export default function Header() {
                 {businessName}
               </span>
               
-              <span className={`text-[8px] uppercase tracking-[0.8em] mt-1 transition-opacity duration-500 ${isScrolled ? 'opacity-60 ' : 'opacity-60'}`}>
-                Nairobi
+              <span className={`text-[8px] uppercase tracking-[0.8em] mt-1 transition-opacity duration-500 ${isScrolled ? 'opacity-60' : 'opacity-60'}`}>
+                {contact.address}
               </span>
             </a>
           </div>
@@ -85,10 +85,10 @@ export default function Header() {
                 </a>
               ))}
               <a 
-                href="#services" 
+                href="#booking" 
                 className={`text-[9px] uppercase tracking-[0.3em] font-bold border px-8 py-3 transition-all duration-500 ${borderColor} ${textColor} hover:bg-neutral-900 hover:text-white hover:border-neutral-900`}
               >
-                Book 24/7
+                Book Now
               </a>
             </nav>
 
@@ -126,11 +126,11 @@ export default function Header() {
             </a>
           ))}
           <a 
-            href="#services"
+            href="#booking"
             onClick={() => setIsMenuOpen(false)}
             className="mt-12 text-[12px] uppercase tracking-[0.5em] font-bold border border-neutral-900 px-12 py-5 text-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors"
           >
-            Request Mobile Spa
+            Book Appointment
           </a>
         </div>
       </div>

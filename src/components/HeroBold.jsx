@@ -1,7 +1,7 @@
 import { clientConfig } from '../config/clientConfig';
 
 export default function HeroBeautyEditorial() {
-  const { businessName, tagline, heroImage, design } = clientConfig;
+  const { businessName, tagline, heroImage, design, colors, contact } = clientConfig;
 
   // Split name for that high-fashion editorial stacking effect
   const nameParts = businessName.split(' ');
@@ -35,7 +35,12 @@ export default function HeroBeautyEditorial() {
               <span className={`text-[16vw] md:text-[12vw] font-light tracking-tighter text-white leading-[0.8] uppercase ${design.font.heading}`}>
                 {firstWord}
               </span>
-             
+              {/* Optionally add second line if business name has more words */}
+              {restOfName && (
+                <span className={`text-[4vw] md:text-[3vw] font-light tracking-widest text-white/80 mt-2 ${design.font.body}`}>
+                  {restOfName}
+                </span>
+              )}
             </h1>
 
             {/* Sub-Header Narrative */}
@@ -44,15 +49,19 @@ export default function HeroBeautyEditorial() {
                 {tagline}
               </p>
               
-              {/* Refined CTA - Ghost Style for Elegance */}
+              {/* Refined CTA - Ghost Style with Rose Gold Accent */}
               <a
                 href="#services"
-                className="group relative px-12 py-5 border border-white text-white overflow-hidden transition-all duration-500 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+                className="group relative px-12 py-5 border border-white text-white overflow-hidden transition-all duration-500 hover:shadow-[0_0_20px_rgba(183,110,121,0.5)]"
+                style={{ '--hover-bg': colors.primary }}
               >
-                <span className="relative z-10 text-[10px] uppercase tracking-[0.5em] font-bold transition-colors duration-500 group-hover:text-black">
+                <span className="relative z-10 text-[10px] uppercase tracking-[0.5em] font-bold transition-colors duration-500 group-hover:text-white">
                   Reserve Experience
                 </span>
-                <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
+                <div 
+                  className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"
+                  style={{ backgroundColor: colors.primary }}
+                />
               </a>
             </div>
           </div>
@@ -65,18 +74,21 @@ export default function HeroBeautyEditorial() {
         <div className="flex gap-12 md:gap-24">
           <div className="flex flex-col gap-1">
              <span className="text-[9px] uppercase tracking-[0.3em] text-white/50">Location</span>
-             <span className="text-[11px] text-white tracking-widest font-medium uppercase">Nairobi & Environs</span>
+             <span className="text-[11px] text-white tracking-widest font-medium uppercase">{contact.address}</span>
           </div>
           <div className="hidden sm:flex flex-col gap-1">
              <span className="text-[9px] uppercase tracking-[0.3em] text-white/50">Service</span>
-             <span className="text-[11px] text-white tracking-widest font-medium uppercase italic">Available 24/7</span>
+             <span className="text-[11px] text-white tracking-widest font-medium uppercase italic">By Appointment</span>
           </div>
         </div>
 
         <div className="flex items-center gap-6 group cursor-default">
            <span className="text-[9px] uppercase tracking-[0.4em] text-white/70 group-hover:text-white transition-colors">Scroll</span>
            <div className="w-[1px] h-12 bg-white/30 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1/2 bg-white animate-scroll-indicator" />
+              <div 
+                className="absolute top-0 left-0 w-full h-1/2 animate-scroll-indicator"
+                style={{ backgroundColor: colors.accent }}
+              />
            </div>
         </div>
       </div>

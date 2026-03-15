@@ -11,16 +11,12 @@ export default function ServicesList() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-32 border-b border-neutral-200 pb-12">
           <div className="max-w-2xl">
             <span className="text-[10px] uppercase tracking-[0.5em] text-neutral-400 block mb-6 font-bold">
-              The Collection
+              Lash Collection
             </span>
             <h2 className={`text-6xl md:text-8xl lg:text-9xl font-light tracking-tighter text-neutral-900 leading-[0.8] ${design.font.heading}`}>
-              Signature <br />
-              <span className="italic font-serif text-neutral-300">Treatments</span>
+              Our Catlog
             </h2>
           </div>
-          <p className={`text-xl text-neutral-500 font-light max-w-xs mt-12 md:mt-0 leading-relaxed ${design.font.body}`}>
-            Exceptional experiences curated for the modern aesthete.
-          </p>
         </div>
 
         {/* Services Grid */}
@@ -37,9 +33,9 @@ export default function ServicesList() {
                   alt={service.name}
                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-[1.5s]"
                 />
-                {/* Fixed Price Badge - Always Visible */}
+                {/* Price Badge */}
                 <div className="absolute bottom-0 left-0 bg-white px-8 py-4 flex flex-col">
-                   <span className="text-[8px] uppercase tracking-[0.3em] text-neutral-400">Rate</span>
+                   <span className="text-[8px] uppercase tracking-[0.3em] text-neutral-400">Starts</span>
                    <span className="text-sm font-medium tracking-widest">{service.price}</span>
                 </div>
               </div>
@@ -48,7 +44,6 @@ export default function ServicesList() {
               <div className="flex flex-col flex-1">
                 <div className="flex items-center gap-4 mb-6">
                   <span className="text-[10px] font-bold text-neutral-900">0{idx + 1}</span>
-                  
                 </div>
                 
                 <h3 className={`text-4xl md:text-5xl font-light uppercase tracking-tighter text-neutral-900 mb-6 ${design.font.heading}`}>
@@ -59,7 +54,7 @@ export default function ServicesList() {
                   {service.description}
                 </p>
 
-                {/* 3. The "Unmissable" Button */}
+                {/* 3. Booking Button */}
                 <a 
                   href={service.calendlyUrl}
                   className="w-full md:w-fit group/btn relative flex items-center justify-between gap-12 bg-neutral-900 px-10 py-6 text-white overflow-hidden transition-all hover:pr-8"
