@@ -1,7 +1,7 @@
 export const clientConfig = {
   businessName: "Shey Beauty Lab",
   tagline: "Lash Artistry & Beauty Lab. Define Your Gaze.",
-  heroImage: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1200",
+  heroImage: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=1200", // Soft, high-end beauty portrait
   colors: {
     primary: "#B76E79", // Rose Gold
     secondary: "#F9F1F0", // Soft Blush
@@ -29,7 +29,7 @@ export const clientConfig = {
       price: "Starting at ₦25,000",
       description:
         "Enhance your natural lashes with a timeless, elegant look. One extension per natural lash for a subtle, lengthened effect.",
-      image: "https://images.unsplash.com/photo-1583001933989-c6d5c9a8b1c4?w=800",
+      image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800", // Focused eye shot
       calendlyUrl: "https://calendly.com/sheybeautylab/classic",
     },
     {
@@ -37,7 +37,7 @@ export const clientConfig = {
       price: "Starting at ₦35,000",
       description:
         "Achieve a fuller, dramatic look with multiple lightweight extensions per natural lash. Customizable for any desired density.",
-      image: "https://images.unsplash.com/photo-1583197967984-6e5e7c1b1f8a?w=800",
+      image: "https://images.unsplash.com/photo-1448376561459-dbe37c801bd1?auto=format&fit=crop&q=80&w=800", // Dramatic lash focus
       calendlyUrl: "https://calendly.com/sheybeautylab/volume",
     },
     {
@@ -45,14 +45,14 @@ export const clientConfig = {
       price: "Starting at ₦15,000",
       description:
         "Lift and curl your natural lashes for a wide eyed look, plus a deep tint to define and darken perfect for low maintenance beauty.",
-      image: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800",
+      image: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80&w=800", // Natural lifted look
       calendlyUrl: "https://calendly.com/sheybeautylab/lift-tint",
     },
   ],
   portfolio: [
-    "https://images.unsplash.com/photo-1583197967984-6e5e7c1b1f8a?w=2400",
-    "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=2400",
-    "https://images.unsplash.com/photo-1583001933989-c6d5c9a8b1c4?w=2400",
+    "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80&w=2400", // Makeup/Lash aesthetic
+    "https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&q=80&w=2400", // Detailed lash work
+    "https://images.unsplash.com/photo-1526045431048-f857369aba09?auto=format&fit=crop&q=80&w=2400", // Beauty lab vibe
   ],
   testimonials: [
     {
@@ -70,7 +70,7 @@ export const clientConfig = {
     phone: "+234 800 123 4567",
     whatsapp: "+234 800 123 4567",
     instagram: "sheybeautylab",
-    tiktok: "sheybeautylab",  // Added TikTok field
+    tiktok: "sheybeautylab",
     email: "hello@sheybeautylab.com",
     address: "Ondo & Lagos",
   },
