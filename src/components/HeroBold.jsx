@@ -32,9 +32,7 @@ export default function HeroBeautyEditorial() {
           <div className="flex flex-col items-center text-center">
             {/* The Masthead Title - Switched to White for pop */}
             <h1 className="flex flex-col items-center mb-8 select-none">
-              <span className={`text-[16vw] md:text-[12vw] font-light tracking-tighter text-white leading-[0.8] uppercase ${design.font.heading}`}>
-                {firstWord}
-              </span>
+              
               {/* Optionally add second line if business name has more words */}
               {restOfName && (
                 <span className={`text-[4vw] md:text-[3vw] font-light tracking-widest text-white/80 mt-2 ${design.font.body}`}>
